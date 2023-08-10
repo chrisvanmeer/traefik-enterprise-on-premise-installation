@@ -10,6 +10,10 @@ For a full Traefik Enterprise cluster we need at least 1 Controller, 2 Ingress P
 | traefik04  | Proxy / Plugin Registry | 192.168.66.24 |
 | desktop    | Management Station      | 192.168.66.22 | 
 
+## Overview
+
+![Traefik Enterprise diagram](traefik-enterprise-diagram.png)
+
 ## Generic
 
 ### Download and install binaries
