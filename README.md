@@ -34,14 +34,16 @@ rm *.gz
 ### Generate `traefikee` user and group
 
 ```shell
-groupadd -g 1500 traefikee
-useradd -g traefikee --no-user-group --home-dir="/opt/traefikee" --shell="/usr/sbin/nologin" --system --uid="1500" traefikee
+sudo groupadd -g 1500 traefikee
+sudo useradd -g traefikee --no-user-group --home-dir="/opt/traefikee" --shell="/usr/sbin/nologin" --system --uid="1500" traefikee
 ```
 
-### Create `traefikee` directory
+### Create `traefikee` directories
 
 ```shell
-mkdir -p /opt/traefikee
+sudo mkdir -p /opt/traefikee
+sudo mkdir -p /var/log/traefikee
+sudo chown traefikee:traefikee /var/log/traefikee
 ```
 ### Generate pre-shared token (`$PLUGIN_TOKEN`)
 
